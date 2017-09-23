@@ -1,0 +1,22 @@
+{
+  "base": "./",
+  "paths": {
+    "source": {
+      "config": "semantic/src/theme.config",
+      "definitions": "semantic/src/definitions/",
+      "site": "semantic/src/site/",
+      "themes": "semantic/src/themes/"
+    },
+    "output": {
+      "packaged": "public/",
+      "uncompressed": "public/components/",
+      "compressed": "public/components/",
+      "themes": "public/themes/"
+    },
+    "clean": "public/"
+  },
+  "permission": false,
+  "autoInstall": false,
+  "rtl": false,
+  "version": "2.2.13"
+}

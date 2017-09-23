@@ -1,0 +1,93 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+
+    @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+/*-------------------
+       Fonts
+--------------------*/
+@fontName          : 'Helvetica Neue';
+
+@headerFont        : 'Montserrat', @fontName, Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Montserrat', Arial, Helvetica, sans-serif;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+/* The size of page text  */
+@fontSize : 16px;
+
+
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@orange                     : #F4A261;
+@red                        : #E76F51;
+@yellow                     : #E9C46A;
+@teal                       : #2A9D8F;
+@blue                       : #264653;
+
+/*---  Light Colors  ---*/
+
+/*---   Neutrals  ---*/
+
+/*--- Colored Backgrounds ---*/
+@redBackground            : #E76F51;
+@orangeBackground         : #F4A261;
+@yellowBackground         : #E9C46A;
+@tealBackground           : #2A9D8F;
+@blueBackground           : #264653;
+
+/*--- Colored Headers ---*/
+@redHeaderColor           : darken(@redTextColor, 5);
+@orangeHeaderColor        : darken(@orangeTextColor, 5);
+@yellowHeaderColor        : darken(@yellowTextColor, 5);
+@tealHeaderColor          : darken(@tealTextColor, 5);
+@blueHeaderColor          : darken(@blueTextColor, 5);
+
+/*--- Colored Text ---*/
+@redTextColor             : @red;
+@orangeTextColor          : @orange;
+@yellowTextColor          : @yellow;
+@tealTextColor            : @teal;
+@blueTextColor            : @blue;
+
+/*--- Colored Border ---*/
+@redBorderColor           : @redTextColor;
+@orangeBorderColor        : @orangeTextColor;
+@yellowBorderColor        : @yellowTextColor;
+@tealBorderColor          : @tealTextColor;
+@blueBorderColor          : @blueTextColor;
+
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+
+@primaryColor        : @blue;
+@secondaryColor      : @black;
+
+@lightPrimaryColor   : @lightBlue;
+@lightSecondaryColor : @lightBlack;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@blue             : #313a6c;
+@black            : #232323;
+
+@primaryColor             : @red;
+@secondaryColor           : @blue;
+
+@lightPrimaryColor        : @orange;
+@lightSecondaryColor      : @teal;
+

@@ -1,0 +1,56 @@
+/*******************************
+        Global Overrides
+*******************************/
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@orange                     : #E76F51;
+@red                        : #F4A261;
+@yellow                     : #21BA45;
+@teal                       : #2A9D8F;
+@blue                       : #264653;
+
+/*---  Light Colors  ---*/
+
+/*---   Neutrals  ---*/
+
+/*--- Colored Backgrounds ---*/
+@redBackground            : #E76F51;
+@orangeBackground         : #F4A261;
+@yellowBackground         : #21BA45;
+@tealBackground           : #2A9D8F;
+@blueBackground           : #264653;
+
+/*--- Colored Headers ---*/
+@redHeaderColor           : darken(@redTextColor, 5);
+@orangeHeaderColor        : darken(@orangeTextColor, 5);
+@yellowHeaderColor        : darken(@yellowTextColor, 5);
+@tealHeaderColor          : darken(@tealTextColor, 5);
+@blueHeaderColor          : darken(@blueTextColor, 5);
+
+/*--- Colored Text ---*/
+@redTextColor             : @red;
+@orangeTextColor          : @orange;
+@yellowTextColor          : @yellow;
+@tealTextColor            : @teal;
+@blueTextColor            : @blue;
+
+/*--- Colored Border ---*/
+@redBorderColor           : @redTextColor;
+@orangeBorderColor        : @orangeTextColor;
+@yellowBorderColor        : @yellowTextColor;
+@tealBorderColor          : @tealTextColor;
+@blueBorderColor          : @blueTextColor;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor             : @red;
+@secondaryColor           : @blue;
+
+@lightPrimaryColor        : @orange;
+@lightSecondaryColor      : @teal;
