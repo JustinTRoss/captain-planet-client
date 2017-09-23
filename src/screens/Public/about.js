@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
-import { Button, Grid, Header, Image, Segment } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import {
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Icon,
+  Image,
+  List,
+  Menu,
+  Segment,
+  Visibility,
+} from 'semantic-ui-react';
 
-export default class AboutPage extends Component {
+export default class About extends Component {
   render() {
     return (
       <div>
