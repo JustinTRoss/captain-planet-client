@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header, Card } from 'semantic-ui-react';
 import Nav from './components/Menu';
 import MapMain from './components/MapMain';
-import About from './components/About';
+import About from './About';
 
 const DataArray = [
 	{

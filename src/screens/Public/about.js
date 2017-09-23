@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
+import Nav from './components/Menu';
 import { Link } from 'react-router-dom';
 import {
-  Button,
+  Menu,
   Container,
-  Divider,
+  Button,
   Grid,
   Header,
-  Icon,
   Image,
-  List,
-  Menu,
   Segment,
-  Visibility,
 } from 'semantic-ui-react';
 
-export default class About extends Component {
+class About extends Component {
   render() {
     return (
       <div>
+        <Menu borderless>
+          <Container>
+            <Menu.Item as={Link} to="/">
+              <Header style={{ fontWeight: 'bold', fontSize: '18px' }}>
+                ECOnize
+              </Header>
+            </Menu.Item>
+            <Menu.Item as={Link} to="/About.js">
+              <Header style={{ fontWeight: '', fontSize: '18px' }}>
+                About
+              </Header>
+            </Menu.Item>
+
+            <Menu.Menu position="right" />
+          </Container>
+        </Menu>
+
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
