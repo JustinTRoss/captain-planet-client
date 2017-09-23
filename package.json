@@ -7,7 +7,9 @@
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-google-maps": "^8.3.0",
     "react-router-dom": "^4.1.1",
+    "recompose": "^0.25.0",
     "semantic-ui": "^2.2.13",
     "semantic-ui-react": "^0.71.1",
     "styled-components": "^2.1.1"
@@ -31,20 +33,11 @@
     "react-scripts": "1.0.2"
   },
   "scripts": {
-    "start":
-      "export NODE_PATH=src/shared && export PORT=3001 && react-scripts start",
+    "start": "export NODE_PATH=src/shared && export PORT=3001 && react-scripts start",
     "build": "export NODE_PATH=src/shared && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "postinstall": "flow-typed install",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write --single-quote --no-semi --parser flow",
-      "eslint --fix",
-      "git add"
-    ]
+    "postinstall": "flow-typed install"
   }
 }
