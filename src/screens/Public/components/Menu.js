@@ -10,7 +10,7 @@ const Nav = () => (
 					ECOnize
 				</Header>
 			</Menu.Item>
-			<Menu.Item as={Link} to="/about.js">
+			<Menu.Item as={Link} to="/About.js">
 				<Header style={{ fontWeight: '', fontSize: '18px' }}>
 					About
 				</Header>
