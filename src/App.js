@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
+import { instanceOf } from 'prop-types';
+import { withCookies, Cookies } from 'react-cookie';
 
 import Home from './screens/Public';
 import Login from './screens/Entrance';

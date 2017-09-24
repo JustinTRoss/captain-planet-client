@@ -42,7 +42,9 @@ class CustomCard extends Component {
           <Image src={image} data-id={id} onMouseOver={handleMouseOver} onMouseOut={handleMouseExit} />
         </Card.Content>
         <Card.Content>
-          <Card.Header style={{ fontSize: '12px' }}>{header}</Card.Header>
+          <Card.Header style={{ fontSize: '12px' }}>
+            {header} - {description}
+          </Card.Header>
         </Card.Content>
         <Card.Content extra>
           <div className="ui three buttons">

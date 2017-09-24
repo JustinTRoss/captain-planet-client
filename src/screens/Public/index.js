@@ -10,10 +10,10 @@ const DataArray = [
     lat: 0.533,
     lng: 16.0,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-1.jpg',
-    info: 'Photo 1 info',
+    info: '09/23/17 - 9:00pm',
     header: '09/23/17',
     meta: 'Rhino',
-    description: '',
+    description: 'Endangered',
     options: ['Rhino 99%', 'Hippo 60%', 'Elephant 10%']
   },
   {
@@ -21,10 +21,10 @@ const DataArray = [
     lat: 2.114,
     lng: 13.212,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-2.jpg',
-    info: 'Photo 2 info',
+    info: '09/23/17 - 9:02pm',
     header: '09/23/17',
     meta: 'Hippo',
-    description: '',
+    description: 'Threatened',
     options: ['Hippo 99%', 'Rhino 60%', 'Elephant 10%']
   },
   {
@@ -32,10 +32,10 @@ const DataArray = [
     lat: 0.333,
     lng: 14.323,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-3.jpg',
-    info: 'Photo 3 info',
+    info: '09/23/17 - 9:30pm',
     header: '09/23/17',
     meta: 'Fox',
-    description: '',
+    description: 'Common',
     options: ['Fox 99%', 'Dog 70%', 'Wolf 68%']
   },
   {
@@ -43,10 +43,10 @@ const DataArray = [
     lat: 0.123,
     lng: 15,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-4.jpg',
-    info: 'Photo 4 info',
+    info: '09/23/17 - 9:33pm',
     header: '09/22/17',
     meta: 'Porcupine',
-    description: '',
+    description: 'Common',
     options: ['Porcupine 99%', 'Hedgehog 60%', 'Skunk 10%']
   },
   {
@@ -54,10 +54,10 @@ const DataArray = [
     lat: 1.533,
     lng: 16.0,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-1.jpg',
-    info: 'Photo 5 info',
+    info: '09/23/17 - 9:40pm',
     header: '09/23/17',
     meta: 'Rhino',
-    description: '',
+    description: 'Endangered',
     options: ['Rhino 99%', 'Hippo 60%', 'Elephant 10%']
   },
   {
@@ -65,10 +65,10 @@ const DataArray = [
     lat: 1.194,
     lng: 14.212,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-2.jpg',
-    info: 'Photo 6 info',
+    info: '09/23/17 - 9:41pm',
     header: '09/23/17',
     meta: 'Hippo',
-    description: '',
+    description: 'Threatened',
     options: ['Hippo 99%', 'Rhino 60%', 'Elephant 10%']
   },
   {
@@ -76,10 +76,10 @@ const DataArray = [
     lat: 0.933,
     lng: 15.323,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-3.jpg',
-    info: 'Photo 7 info',
+    info: '09/23/17 - 9:45pm',
     header: '09/23/17',
     meta: 'Fox',
-    description: '',
+    description: 'Common',
     options: ['Fox 99%', 'Dog 70%', 'Wolf 68%']
   },
   {
@@ -87,10 +87,10 @@ const DataArray = [
     lat: 0.923,
     lng: 15,
     image: 'http://d3e8siwsor5u31.cloudfront.net/camera-trap-4.jpg',
-    info: 'Photo 8 info',
+    info: '09/22/17 - 10:30pm',
     header: '09/22/17',
     meta: 'Porcupine',
-    description: '',
+    description: 'Common',
     options: ['Porcupine 99%', 'Hedgehog 60%', 'Skunk 10%']
   }
 ];
