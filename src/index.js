@@ -7,18 +7,15 @@
 
 /* global document */
 
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { CookiesProvider } from 'react-cookie';
+import React from 'react'
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import App from './App';
+import App from './App'
 
 render(
   <BrowserRouter>
-    <CookiesProvider>
-      <App />
-    </CookiesProvider>
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
-);
+)
