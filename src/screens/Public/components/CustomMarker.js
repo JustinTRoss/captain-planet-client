@@ -20,11 +20,11 @@ class CustomMarker extends Component {
 
   render() {
     const { showInfoWindow } = this.state;
-    const { info, lat, lng } = this.props;
+    const { info, lat, lng, hovered } = this.props;
 
     return (
       <Marker position={{ lat, lng }} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseExit}>
-        {showInfoWindow && (
+        {(showInfoWindow || hovered) && (
           <InfoWindow>
             <h4>{info}</h4>
           </InfoWindow>
