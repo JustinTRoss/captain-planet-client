@@ -1,8 +1,8 @@
-import React from 'react';
-import { Icon } from 'semantic-ui-react';
-import Dropzone from 'react-dropzone';
+import React from 'react'
+import { Icon } from 'semantic-ui-react'
+import Dropzone from 'react-dropzone'
 
-const FileDrop = ({ handleDropAccepted, text }: { handleDropAccepted: () => void, text: string }) => (
+const FileDrop = ({ handleDropAccepted, text }) => (
   <Dropzone
     style={{
       height: '200px',
@@ -30,6 +30,6 @@ const FileDrop = ({ handleDropAccepted, text }: { handleDropAccepted: () => void
       {text}
     </div>
   </Dropzone>
-);
+)
 
-export default FileDrop;
+export default FileDrop

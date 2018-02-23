@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Container, Header, Card, Input, Grid } from 'semantic-ui-react';
-import Nav from './components/Menu';
-import MapMain from './components/MapMain';
-import CustomCard from './components/CustomCard';
+import React, { Component } from 'react'
+import { Container, Header, Card, Input, Grid } from 'semantic-ui-react'
+import Nav from './components/Menu'
+import MapMain from './components/MapMain'
+import CustomCard from './components/CustomCard'
 
 const DataArray = [
   {
@@ -93,49 +93,71 @@ const DataArray = [
     description: 'Common',
     options: ['Porcupine 99%', 'Hedgehog 60%', 'Skunk 10%']
   }
-];
+]
 
 class Home extends Component {
-  state = {
-    data: DataArray,
-    searchTerm: ''
-  };
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      data: DataArray,
+      searchTerm: ''
+    }
+
+    fetch('http://localhost:3000/api/uploads', { credentials: 'include' })
+      .then(res => res.json())
+      .then(res => console.log(res))
+  }
+  handleDropAccepted = acceptedFiles => {
+    console.log('test', acceptedFiles)
+    const file = acceptedFiles[0]
+    const form = new FormData()
+    form.append('imageFile', file)
+    form.append('name', 'imageFile')
+    fetch('http://localhost:3000/api/upload', {
+      method: 'POST',
+      body: form,
+      credentials: 'include'
+    })
+      .then(res => res.json())
+      .then(res => console.log(res))
+  }
   handleMouseOver = e => {
-    const data = this.state.data;
-    const id = e.currentTarget.dataset.id;
-    const datum = data.find(pic => parseInt(pic.id, 10) === parseInt(id, 10));
-    datum.hovered = true;
+    const data = this.state.data
+    const id = e.currentTarget.dataset.id
+    const datum = data.find(pic => parseInt(pic.id, 10) === parseInt(id, 10))
+    datum.hovered = true
     this.setState(() => ({
       data: [...data]
-    }));
-  };
+    }))
+  }
   handleMouseExit = e => {
-    const data = this.state.data;
-    const id = e.currentTarget.dataset.id;
-    const datum = data.find(pic => parseInt(pic.id, 10) === parseInt(id, 10));
-    datum.hovered = false;
+    const data = this.state.data
+    const id = e.currentTarget.dataset.id
+    const datum = data.find(pic => parseInt(pic.id, 10) === parseInt(id, 10))
+    datum.hovered = false
     this.setState(() => ({
       data: [...data]
-    }));
-  };
+    }))
+  }
 
   handleSearchTermChange = event => {
-    this.setState({ searchTerm: event.target.value });
-  };
+    this.setState({ searchTerm: event.target.value })
+  }
 
   render() {
-    const data = this.state.data;
-    const searchTerm = this.state.searchTerm;
+    const data = this.state.data
+    const searchTerm = this.state.searchTerm
     const searchResults = data.filter(datum =>
       datum.options
         .join(' ')
         .toLowerCase()
         .includes(searchTerm)
-    );
+    )
 
     return (
       <div style={{ paddingBottom: '1em', height: '100vh' }}>
-        <Nav />
+        <Nav handleDropAccepted={this.handleDropAccepted} />
         <div style={{ padding: '1em' }}>
           <MapMain
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfOfXY8kPTjiZn4mhqq5ve8RL2NkZYRNg&callback=initMap"
@@ -170,7 +192,14 @@ class Home extends Component {
               </Grid.Row>
             </Grid>
           </Container>
-          <div style={{ maxHeight: '40vh', display: 'flex', flexWrap: 'nowrap', overflowX: 'scroll' }}>
+          <div
+            style={{
+              maxHeight: '40vh',
+              display: 'flex',
+              flexWrap: 'nowrap',
+              overflowX: 'scroll'
+            }}
+          >
             {searchResults.map(props => (
               <CustomCard
                 key={props.id}
@@ -182,8 +211,8 @@ class Home extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

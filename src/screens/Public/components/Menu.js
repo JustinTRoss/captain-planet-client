@@ -1,9 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, Header, Icon, Container, Button, Modal, Image } from 'semantic-ui-react';
-import FileDrop from './Dropzone.js';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import {
+  Menu,
+  Header,
+  Icon,
+  Container,
+  Button,
+  Modal,
+  Image
+} from 'semantic-ui-react'
+import FileDrop from './Dropzone.js'
 
-const Nav = () => (
+const Nav = ({ handleDropAccepted }) => (
   <Menu borderless>
     <Menu.Item as={Link} to="/">
       <Header style={{ fontWeight: 'bold', fontSize: '25px' }}>
@@ -23,9 +31,11 @@ const Nav = () => (
         >
           <Modal.Header>Add Images to ECOgnize</Modal.Header>
           <Modal.Content style={{ width: '100%' }}>
-            <FileDrop />
+            <FileDrop handleDropAccepted={handleDropAccepted} />
             <Modal.Description>
-              <Header style={{ paddingTop: '15px' }}>Drag and drop up to 100 images at a time.</Header>
+              <Header style={{ paddingTop: '15px' }}>
+                Drag and drop up to 100 images at a time.
+              </Header>
             </Modal.Description>
           </Modal.Content>
         </Modal>
@@ -39,5 +49,5 @@ const Nav = () => (
       </Menu.Item>
     </Menu.Menu>
   </Menu>
-);
-export default Nav;
+)
+export default Nav
